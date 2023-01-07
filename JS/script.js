@@ -29,7 +29,7 @@ import {
 
 // console.log(finances.length);
 
-setEnvironmentType("P"); // Set Environment Type 'T' Test or 'P' Production
+setEnvironmentType("T"); // Set Environment Type 'T' Test or 'P' Production
 
 console.log("Number of Months:");
 getArrayLength(finances); // Get and Console Log the Length of the Array Finances

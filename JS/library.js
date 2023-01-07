@@ -33,9 +33,9 @@ export function getSumOfArray(ArrayName, columnNumber) {
         total += ArrayName[i][columnNumber];
 
         if (environment === "T") {
-            console.log(i);
-            console.log(columnNumber);
-            console.log(total);
+            console.log("Row Number: "+i);
+            console.log("Column Number: "+columnNumber);
+            console.log("Total: "+total);
         }
         
     }
@@ -47,31 +47,47 @@ export var totalDifference =0;
 export function getDifferenceBetweenRowsOfArray (ArrayName, columnNumber, labelColumnNumber) {
 
     var months = ArrayName.length;
-    console.log(months);
+    
+    if (environment === "T") {
+        console.log("Months: "+months);
+    }
+    
 
     var previousMonth = 0;
     var totalDifference = 0;
 
     previousMonth = ArrayName[0][columnNumber];
-    // console.log(previousMonth);
-
+    
+    if (environment === "T") {
+        console.log("Previous Month: "+previousMonth);
+    }
+        
     for ( let j = 0; j < months; j++) {
         
 
         totalDifference = ArrayName[j][columnNumber] - ArrayName[0][columnNumber];          
                 
         var monthIdentifier = ArrayName[j][labelColumnNumber];
-        // console.log(monthIdentifier);
-        // console.log(labelColumnNumber);
-
+        
+        if (environment === "T") {
+            console.log("Month Identifier: "+monthIdentifier);
+            console.log("Label Column Number: "+labelColumnNumber);
+        }
+        
         var differenceArray = [monthIdentifier, totalDifference];
         
-        console.log(differenceArray);
-        
+        if (environment === "T") {
+            console.log("New Array Containing Differences");
+            console.log(differenceArray);
+        }
+          
     }
     
-    console.log("Total Difference Before Rounding");
-    console.log(totalDifference / 85);
+    if (environment === "T") {
+        console.log("Total Difference Before Rounding");
+        console.log(totalDifference / 85);
+    
+    }
 
     var newdiff = 0;
     var RoundedNewdiff = 0;
