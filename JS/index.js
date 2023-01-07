@@ -1,4 +1,6 @@
-var finances = [
+// THE PROVIDED ARRAY FINANCES
+
+export var finances = [
 ['Jan-2010', 867884],
 ['Feb-2010', 984655],
 ['Mar-2010', 322013],
