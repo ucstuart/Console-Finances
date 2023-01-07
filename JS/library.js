@@ -97,3 +97,12 @@ export function getDifferenceBetweenRowsOfArray (ArrayName, columnNumber, labelC
     console.log(RoundedNewdiff);
     
 } 
+
+export var MaxValueInArray = 0;
+
+export function maxInArray(ArrayName, columnNumber) {
+
+    MaxValueInArray = Math.max(ArrayName[columnNumber]);
+    console.log(MaxValueInArray);
+
+}

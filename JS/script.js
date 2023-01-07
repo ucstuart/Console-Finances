@@ -8,12 +8,14 @@ import {
     environment,
     total,
     totalDifference,
+    MaxValueInArray,
     // Functions
     printurl,
     getArrayLength,
     setEnvironmentType,
     getSumOfArray,
-    getDifferenceBetweenRowsOfArray
+    getDifferenceBetweenRowsOfArray,
+    maxInArray
 } from './library.js';
 
 // IMPORT THE DATA FOR THE PROJECT
@@ -41,6 +43,7 @@ console.log(total);
 
 getDifferenceBetweenRowsOfArray(finances, 1, 0);
 
+maxInArray(finances,1);
 
 
 
