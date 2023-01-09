@@ -25,13 +25,7 @@ import {
 } from './index.js';
 
 
-// console.log("Test")
-
-// printurl();
-
-// console.log(finances.length);
-
-setEnvironmentType("T"); // Set Environment Type 'T' Test or 'P' Production
+setEnvironmentType("P"); // Set Environment Type 'T' Test or 'P' Production
 
 console.log("Number of Months:");
 getArrayLength(finances); // Get and Console Log the Length of the Array Finances
