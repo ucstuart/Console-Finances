@@ -9,6 +9,8 @@ import {
     total,
     totalDifference,
     MaxValueInArray,
+    // Arrays
+    differenceArray,
     // Functions
     printurl,
     getArrayLength,
@@ -25,7 +27,7 @@ import {
 } from './index.js';
 
 
-setEnvironmentType("P"); // Set Environment Type 'T' Test or 'P' Production
+setEnvironmentType("T"); // Set Environment Type 'T' Test or 'P' Production
 
 console.log("Number of Months:");
 getArrayLength(finances); // Get and Console Log the Length of the Array Finances
@@ -37,7 +39,16 @@ console.log(total);
 
 getDifferenceBetweenRowsOfArray(finances, 1, 0);
 
-maxInArray(finances,1);
+
+// Get the Max Value in the Array
+maxInArray(differenceArray,1);
+
+
+
+// Testing in Core Script To Remove After Testing 
+// console.log(Math.max(finances[1]));
+
+
 
 
 

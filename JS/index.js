@@ -1,5 +1,7 @@
 // THE PROVIDED ARRAY FINANCES
 
+// We are provided an array of arrays containing the month, and the profit/loss for each month. 
+
 export var finances = [
 ['Jan-2010', 867884],
 ['Feb-2010', 984655],

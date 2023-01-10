@@ -43,6 +43,8 @@ export function getSumOfArray(ArrayName, columnNumber) {
 }
 
 export var totalDifference =0;
+export var monthIdentifier =0;
+export var differenceArray = [monthIdentifier, totalDifference];
 
 export function getDifferenceBetweenRowsOfArray (ArrayName, columnNumber, labelColumnNumber) {
 
@@ -74,7 +76,7 @@ export function getDifferenceBetweenRowsOfArray (ArrayName, columnNumber, labelC
             console.log("Label Column Number: "+labelColumnNumber);
         }
         
-        var differenceArray = [monthIdentifier, totalDifference];
+        differenceArray = [monthIdentifier, totalDifference];
         
         if (environment === "T") {
             console.log("New Array Containing Differences");
@@ -102,7 +104,34 @@ export var MaxValueInArray = 0;
 
 export function maxInArray(ArrayName, columnNumber) {
 
-    MaxValueInArray = Math.max(ArrayName[columnNumber]);
+    // MaxValueInArray = Math.max(ArrayName[columnNumber]);
+    // MaxValueInArray = ArrayName[2].Math.max();
+    // console.log(Math.pow(ArrayName[columnNumber]));
+    // console.log(MaxValueInArray);
+
+    console.log("Array: "+ArrayName);
+    console.log("Column Number: "+columnNumber);
+    console.log("Max Value In Array: "+MaxValueInArray);
+
+    var i = 0;
+
+    console.log(i);
+
+    for ( let i=0; i < ArrayName.length; i++ ) {
+        if (ArrayName[columnNumber][i] > MaxValueInArray ) {
+            console.log("Im In The For Statement!")
+            console.log("Array Name: " +ArrayName);
+            console.log("Column Number: " +columnNumber);
+            console.log("I: "+i);
+            console.log("Max Value in Array: "+MaxValueInArray);
+            MaxValueInArray=ArrayName[columnNumber][i];
+        }
+    }
+
+    console.log("Calculated by For Loop: "+MaxValueInArray);
+
+    MaxValueInArray = Math.max.apply(0, ArrayName);
+
     console.log(MaxValueInArray);
 
 }
