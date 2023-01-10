@@ -16,7 +16,7 @@ The REPO can also be found at: <a href="https://github.com/ucstuart/Console-Fina
 
 ## Console Output 
 
-
+<img src="./IMAGES/console.png">
 
 ## Final Notes
 
