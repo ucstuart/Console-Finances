@@ -1,5 +1,7 @@
 // STUARTS LIBRARY OF FUNCTIONS AND BOILERPLATE CODE
 
+
+
 export var url = 'https://bbc.co.uk';
 
 // Global Variables used for the Library
@@ -97,41 +99,80 @@ export function getDifferenceBetweenRowsOfArray (ArrayName, columnNumber, labelC
     RoundedNewdiff = newdiff.toFixed(2);
     console.log("Average of the Changes in the Profit / Loss for the Period")
     console.log(RoundedNewdiff);
-    
+
+    if (environment==="P") {
+
+        console.log("Difference Array is only showing one entry??");
+        console.log("Difference Array:" + differenceArray);
+
+    }
 } 
 
 export var MaxValueInArray = 0;
 
+import {
+        finances
+    } from './index.js';
+
 export function maxInArray(ArrayName, columnNumber) {
+
+    
+
+
+    // TRYING ANOTHER WAY
 
     // MaxValueInArray = Math.max(ArrayName[columnNumber]);
     // MaxValueInArray = ArrayName[2].Math.max();
     // console.log(Math.pow(ArrayName[columnNumber]));
     // console.log(MaxValueInArray);
 
-    console.log("Array: "+ArrayName);
-    console.log("Column Number: "+columnNumber);
-    console.log("Max Value In Array: "+MaxValueInArray);
 
-    var i = 0;
+    // ATTEMPT 2
 
-    console.log(i);
+    // console.log("Array: "+ArrayName);
+    // console.log("Column Number: "+columnNumber);
+    // console.log("Max Value In Array: "+MaxValueInArray);
 
-    for ( let i=0; i < ArrayName.length; i++ ) {
-        if (ArrayName[columnNumber][i] > MaxValueInArray ) {
-            console.log("Im In The For Statement!")
-            console.log("Array Name: " +ArrayName);
-            console.log("Column Number: " +columnNumber);
-            console.log("I: "+i);
-            console.log("Max Value in Array: "+MaxValueInArray);
-            MaxValueInArray=ArrayName[columnNumber][i];
-        }
+    // var i = 0;
+
+    // console.log(i);
+
+    // for ( let i=0; i < ArrayName.length; i++ ) {
+    //     if (ArrayName[columnNumber][i] > MaxValueInArray ) {
+    //         console.log("Im In The For Statement!")
+    //         console.log("Array Name: " +ArrayName);
+    //         console.log("Column Number: " +columnNumber);
+    //         console.log("I: "+i);
+    //         console.log("Max Value in Array: "+MaxValueInArray);
+    //         MaxValueInArray=ArrayName[columnNumber][i];
+    //     }
+    // }
+
+    // console.log("Calculated by For Loop: "+MaxValueInArray);
+
+    // MaxValueInArray = Math.max.apply(0, ArrayName);
+
+    // console.log(MaxValueInArray);
+
+
+    // ATTEMPT 3
+
+
+
+    if (environment="T") {
+        console.log("TESTING OUTPUT START");
+        console.log("Array Name: "+ArrayName);
+        console.log("Column Number: "+columnNumber);
+        console.log("Max Value In Array at Start: "+MaxValueInArray);
+        console.log("TESTING OUTPUT END");
     }
 
-    console.log("Calculated by For Loop: "+MaxValueInArray);
+    let n =0;
 
-    MaxValueInArray = Math.max.apply(0, ArrayName);
+    console.log("Difference Array"+differenceArray);
+    console.log("Finances Array"+finances);
 
-    console.log(MaxValueInArray);
+    differenceArray.forEach(n => console.log(n[1]));
+
 
 }
