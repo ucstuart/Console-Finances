@@ -196,8 +196,8 @@ export function maxInArray(ArrayName, columnNumber) {
 
     let n =0;
 
-    console.log("Difference Array"+differenceArray);
-    console.log("Finances Array"+finances);
+    // console.log("Difference Array"+differenceArray);
+    // console.log("Finances Array"+finances);
 
     differenceArray.forEach(n => console.log(n[1]));
 
