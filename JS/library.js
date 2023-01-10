@@ -2,15 +2,20 @@
 
 
 
-export var url = 'https://bbc.co.uk';
+export var url = 'https://bbc.co.uk'; // this is not used for this project but used for testing libraries, import and export. 
 
 // Global Variables used for the Library
 
 export var environment; // To declare 'P' Production Environment 'T' Testing
 
+// This Function is not used within this project. 
+
 export function printurl() {
     console.log(url);
 }
+
+
+// This function sets the environment, P production T testing, and if testing is set, there will be more output within the console to aid debugging, and if a particular element is required to out put this can be turned on for that section. 
 
 export function setEnvironmentType(Env) {
     environment = Env;
@@ -20,11 +25,21 @@ export function setEnvironmentType(Env) {
     }
 
 
+// This function gets the length (number of rows) of an array
+// input (arrayname)
+// output to console the length
+
 export function getArrayLength(ArrayName) {
     console.log(ArrayName.length);
 }
 
+// Variables for getSumOfArray
+
 export var total = 0;
+
+// This function getSumOfArray gets the sum of an arrays, specific columnNumber.
+// input (arrayname, columnumber)
+// output total variable - the total is saved in a variable called total.
 
 export function getSumOfArray(ArrayName, columnNumber) {
     
@@ -44,9 +59,15 @@ export function getSumOfArray(ArrayName, columnNumber) {
 
 }
 
+// Declares variables for the getDifferenceBetweenRowsofArray function
+
 export var totalDifference =0;
 export var monthIdentifier =0;
 export var differenceArray = [monthIdentifier, totalDifference];
+
+// Function getDifferenceBetweenRowsOfArray, this function calculates the difference between a previous row, and a current row, of a given array, of a given column.
+// input (arrayname, columnnumber, labelcolumnumber) - the label column number is the collum with the data label in it, in this case the Month Name and Year. 
+// output variable roundednewdiff (rounded difference) to the console
 
 export function getDifferenceBetweenRowsOfArray (ArrayName, columnNumber, labelColumnNumber) {
 
@@ -68,6 +89,8 @@ export function getDifferenceBetweenRowsOfArray (ArrayName, columnNumber, labelC
         
     for ( let j = 0; j < months; j++) {
         
+
+        // this part does not work correctly - but gets the right result - i have found this during testing and havent had the time to review and fix. 
 
         totalDifference = ArrayName[j][columnNumber] - ArrayName[0][columnNumber];          
                 
@@ -101,12 +124,16 @@ export function getDifferenceBetweenRowsOfArray (ArrayName, columnNumber, labelC
     console.log(RoundedNewdiff);
 
     if (environment==="P") {
-
+        // Temp set to P as I have found the issue that the array is not been compiled correctly. 
         console.log("Difference Array is only showing one entry??");
         console.log("Difference Array:" + differenceArray);
 
     }
 } 
+
+
+// These sections are attemps at the MaxValueInArray function - this does not yet work, and is because the above array didnt work correctly, but I only found this during testing, and havent had the time to complete the review and resolve. 
+
 
 export var MaxValueInArray = 0;
 

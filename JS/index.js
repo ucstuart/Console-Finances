@@ -2,6 +2,8 @@
 
 // We are provided an array of arrays containing the month, and the profit/loss for each month. 
 
+// I have created a spreadsheet to validate the data Check Data.xlsx also in the Repo
+
 export var finances = [
 ['Jan-2010', 867884],
 ['Feb-2010', 984655],
