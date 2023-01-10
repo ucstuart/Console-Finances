@@ -123,8 +123,7 @@ export function getDifferenceBetweenRowsOfArray (ArrayName, columnNumber, labelC
     console.log("Average of the Changes in the Profit / Loss for the Period")
     console.log(RoundedNewdiff);
 
-    if (environment==="P") {
-        // Temp set to P as I have found the issue that the array is not been compiled correctly. 
+    if (environment==="T") {
         console.log("Difference Array is only showing one entry??");
         console.log("Difference Array:" + differenceArray);
 
